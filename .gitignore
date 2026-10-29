@@ -1,18 +1,29 @@
-# Dependency directories
-node_modules/
-backend/node_modules/
-frontend/node_modules/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
 
-# Local databases
-local.db
-backend/local.db
-*.db
+# Chroma persistent storage & models
+chroma_db/
+.cache/
 
-# Environment variables
+# Local sensitive runtime files & audit logs
+adviser_audit_log.json
+clients_custom.json
+pending_plans.json
 .env
-backend/.env
-frontend/.env
 
-# OS files
+# Streamlit
+.streamlit/secrets.toml
+
+# IDE & OS
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
